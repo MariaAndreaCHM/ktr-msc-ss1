@@ -1,0 +1,54 @@
+abstract class Character {
+    protected String  name="";
+protected int  life=50;
+    protected int  agility=2;
+    protected int  strength=2;
+    protected int  wit=2;
+    protected  final String RPG_CLASS="Character";
+
+    public Character( String name) {
+        this.name=name;
+    }
+     public Character(String name,int life,int agility,int strength,int wit) {
+         this.name=name;
+         this. life=life;
+         this.agility=agility;
+         this.strength=strength;
+         this.wit=wit;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
+    public String getName() {
+        return name;
+    }
+
+    public int getLife() {
+        return life;
+    }
+
+    public int getAgility() {
+        return agility;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getWit() {
+        return wit;
+    }
+
+    public String getRpgClass() {
+        return RPG_CLASS;
+    }
+    
+    public  void attack(String action){
+        System.out.println(this.name+":Rrrrrr");
+    }
+    
+    
+}
