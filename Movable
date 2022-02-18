@@ -1,0 +1,8 @@
+public interface Movable {
+    public abstract void moveRight();
+    public abstract void moveLeft();
+    public abstract void moveForward();
+    public abstract void moveBack();
+        
+    
+}
