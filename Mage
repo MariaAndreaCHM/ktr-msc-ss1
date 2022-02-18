@@ -1,0 +1,15 @@
+public class Mage extends Character {
+    
+    public Mage(String name, int life,int agility,int strength,int wit) {
+        super("Mage",70,3,10,10);
+    }
+     public void attack(String weapon){
+       if(weapon=="magic"&&weapon=="wand"){
+           System.out.println(this.name+":Rrrrrr");
+            System.out.println(this.name+":Feel the power of my"+weapon);
+       }else{
+           System.out.println("Error");
+       }
+    }
+    
+}
